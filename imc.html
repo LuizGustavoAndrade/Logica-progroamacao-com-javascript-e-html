@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+
+//O cálculo do IMC, segundo a Organização Mundial da Saúde, é composto pelo peso divido pela altura multiplicado pela altura. Portanto, criaremos uma variável chamada pesoPessoa, e outra, alturaPessoa.
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+        pulaLinha();
+    }
+    
+    var pesoPessoa = 73;
+    var alturaPessoa = 1.71;
+    var imcPessoa = pesoPessoa / (alturaPessoa * alturaPessoa);
+
+    mostra("O IMC da pessoa é " + Math.round(imcPessoa));
+
+    var pesoAmigo = 68;
+    var alturaAmigo = 1.72;
+    var imcAmigo =  pesoAmigo / (alturaAmigo * alturaAmigo);
+
+    mostra("O IMC do amigo é " + Math.round(imcAmigo));
+</script>
