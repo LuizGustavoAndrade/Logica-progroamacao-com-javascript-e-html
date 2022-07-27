@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+//Gilberto aprendeu que funções podem tornar seu programa mais fácil de manter. Digo isso, porque quando ele achou melhor pular duas linhas em todos os lugares do seu programa ele adicionou pulaLinha por todo o código de acordo com a quantidade que seria pulado.É um código totalmente funcional, resolve o problema. O que precisaríamos alterar no código de Gilberto para conseguir o mesmo resultado, mas sem ter que chamar mais uma vez o pulaLinha?
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+        pulaLinha();
+    }
+    var titulo = "Bem-vindo ao meu programa!";
+
+    //document.write("<h1>" + titulo + "</h1>");
+    mostra("<h1>" + titulo + "</h1>");
+    //document.write("Vocês não sabem o que tive que aprender para fazer isso!");
+    mostra("Vocês não sabem o que tive que aprender para fazer isso!");
+    //document.write("Contudo, assistindo os vídeos e estudando ...");
+    mostra("Contudo, assistindo os vídeos e estudando ...");
+    //document.write("Eu vou mais longe!");
+    mostra("Eu vou mais longe!");
+
+
+</script>
