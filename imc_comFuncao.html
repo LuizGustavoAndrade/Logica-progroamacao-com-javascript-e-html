@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <script>
 
-//O cálculo do IMC, segundo a Organização Mundial da Saúde, é composto pelo peso divido pela altura multiplicado pela altura.
+    //O cálculo do IMC, segundo a Organização Mundial da Saúde, é composto pelo peso divido pela altura multiplicado pela altura.
 
     function pulaLinha() {
 
@@ -25,4 +25,20 @@
 
     mostra("Nome: " + nome);
     mostra("O IMC calculado é " + Math.round(imc));
+
+    //A OMS determina que indivíduos com IMC menor que 18.5 estão abaixo da média, com 25 estão acima da média, e entre 18.5 e 25 estão na média aceitável.
+
+    if (imc < 18)
+        {
+            mostra("Seu IMC está abaixo do recomendado");
+        }
+    if (imc > 25)
+        {
+            mostra("Seu IMC está acima do recomendado");
+        }
+
+    if (imc >= 18.5 && imc <= 25)
+        {
+            mostra("Seu IMC está excelente!");
+        }
 </script>
