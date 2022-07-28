@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+        pulaLinha();
+    }
+    // fazendo a taboada do 7 em repeticao até x10.
+
+    // variaval para multiplicar o 7 da taboada., então vou iniciar  em 1
+    var multiplicador = 1;
+
+    // criando a repeticao da minha taboada até chegar em 10
+
+    while(multiplicador <= 10){
+        mostra(7 * multiplicador);
+        multiplicador = multiplicador + 1;
+    }
+</script>
