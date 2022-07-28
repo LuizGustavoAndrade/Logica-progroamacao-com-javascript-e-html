@@ -11,15 +11,13 @@
         pulaLinha();
         pulaLinha();
     }
-    // fazendo a taboada do 7 em repeticao até x10.
 
-    // variaval para multiplicar o 7 da taboada., então vou iniciar  em 1
-    var multiplicador = 1;
-
-    // criando a repeticao da minha taboada até chegar em 10
-
-    while(multiplicador <= 10){
-        mostra(7 * multiplicador);
-        multiplicador = multiplicador + 1;
+    var tabuada = parseInt(prompt("Digite qual tabuada de ser executada"));
+//  for(declara a variável   ; até qual valor repetir; sequencia que a variável vai adotar, nesse caso é var = var + 1, ou var++)   
+    for(var multiplicador = 1; multiplicador <= 10; multiplicador++){
+        mostra(tabuada * multiplicador);
     }
+
+    mostra("Fim da tabuada do " + tabuada + ".");
+
 </script>
