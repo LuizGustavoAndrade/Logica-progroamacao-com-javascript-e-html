@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+
+// Nosso objetivo é criar um jogo em que o usuário adivinhe qual é o número pensado. O indivíduo se depara com a página, contendo um alerta perguntando qual é o chute, o usuário inserirá um número entre 1 e 10, e se este número for igual ao numeroPensado, teremos um acerto.
+// Portanto, teremos uma variável chute, que lerá a informação digitada no teclado
+// Se acertarmos, surgirá uma mensagem indicando isso. Se errarmos, ele indicará o erro e ainda exibirá qual era o número pensado.
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+        pulaLinha();
+    }
+    
+    var numeropensado = 5;
+    var chute = parseInt(prompt("Digite seu chute!"));
+
+    if (chute == numeropensado){
+        mostra("Voce acertou!")
+    }
+
+    if (chute != numeropensado){
+        mostra("Voce ERROU, o numero pensado foi "+ numeropensado + ".");
+    }
+
+</script>
