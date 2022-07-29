@@ -15,16 +15,26 @@
         pulaLinha();
     }
     
-    var numeropensado = Math.round(Math.random() * 10);
-    var chute = parseInt(prompt("Digite seu chute!"));
+    var numeroPensado = Math.round(Math.random() * 10);
 
-    if (chute == numeropensado)
-        {
-        mostra("Voce ACERTOU!")
-        } 
-        else
-            {
-            mostra("Voce ERROU, o numero pensado foi "+ numeropensado + ".");
-            }
+    var tentativas = 1;
 
+    while(tentativas <= 3) {
+
+        var chute = parseInt(prompt("Digite seu chute!"));
+
+        if(chute == numeroPensado) {
+
+        mostra("Você ACERTOU, o número pensado era " + numeroPensado);
+        break;
+
+        } else {
+
+           mostra("Você ERROU!");
+        }
+    
+    tentativas++;
+}
+
+mostra("FIM");
 </script>
