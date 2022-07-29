@@ -1,20 +1,3 @@
-<!--
-Esse é um simples exercício proposto pelo curso da alura em Lógica de programação.
-
-Exercício:
-
-Karol é organizadora de eventos. Em alguns meses ela é capaz de organizar três eventos 
-e em outros ela organiza cinco. Ou seja, a quantidade de eventos organizados por Karol
-por mês é variável.
-
-A organizadora de eventos pediu ao seu irmão Kauan, estudante de Ciência da Computação,
-que criasse um programa no qual ela pode informar o total gasto nos eventos e disso
-obter uma média das despesas. Essa média ajudará a prever os gastos futuros nos próximos
-meses.
-
-e seu código estava assim:
--->
-
 <meta charset="UTF-8">
 <script>
 
@@ -32,12 +15,15 @@ e seu código estava assim:
     var totalDeEventos = parseInt(prompt("Informe o total de eventos"));
 
     var contador = 1;
+   
+    var totalGastoComEventos = 0;
 
     while(contador <= totalDeEventos) {
 
-        var totalGastoComEventos = 0;
         var gasto = parseFloat(prompt("Informe total gasto com evento"));
+
         totalGastoComEventos = totalGastoComEventos + gasto;
+
         contador++;
     }
 
@@ -45,12 +31,3 @@ e seu código estava assim:
 
     mostra("A média de gastos é " + media);
 </script>
-
-<!--
-O problema é que Kauan não construiu o programa corretamente, pois tinha que estudar
-para a prova de Cálculo 3 na faculdade e acabou cometendo um equívoco. Essa falha
-resultará no cálculo errado da média.
-
-Qual o problema do código de Kauan? Altere o código para que funcione corretamente
-deixando sua irmã feliz.
--->
