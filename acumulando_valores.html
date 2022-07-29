@@ -12,13 +12,18 @@
         pulaLinha();
     }
     
-    var idadePedro = 28;
-    var idadeMarta = 32;
-    var idadeJorge = 60;
-    var idadeBete = 22;
+    var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
 
-    var totalIdades = (idadePedro + idadeMarta + idadeJorge + idadeBete)
-    var mediaIdades = totalIdades / 4;
+    var numero = 1;
 
-    mostra(mediaIdades);
+    var totalIdades = 0;
+
+    while(numero <= totalFamiliares){
+        var idadeFamiliares = parseInt(prompt("Informe idade do familiar: "));
+        totalIdades = totalIdades + idadeFamiliares;
+        numero++;
+    }   
+    var mediadasIdades = totalIdades/totalFamiliares;
+    mostra("A media de idade dos familiares é: " + mediadasIdades + ".");
+    mostra("Fim");
 </script>
